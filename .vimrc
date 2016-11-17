@@ -1,17 +1,17 @@
 source ~/.vimrc-vundle
 
 
-syntax on					                                    " Enable syntax highlighting
-set number					                                    " Show line numbers
+syntax on                                                       " Enable syntax highlighting
+set number                                                      " Show line numbers
 
-set backspace=indent,eol,start			                        " Fix backspace behaviour
+set backspace=indent,eol,start                                  " Fix backspace behaviour
 
 colorscheme Tomorrow-Night
 
 set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab     " Tab character = 4 spaces; tab key = inserts spaces
 
 nmap <Leader>ev :tabe $MYVIMRC<cr>                              " Easy edit vimrc
-nmap <Leader>eb :tabe ~/.bash_profile<cr>                       " Easy edit bash profile
+nmap <Leader>eb :tabe ~/.bash_ext<cr>                           " Easy edit bash profile
 
 set hlsearch
 set incsearch
