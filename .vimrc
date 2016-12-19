@@ -11,7 +11,7 @@ colorscheme Tomorrow-Night
 set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab     " Tab character = 4 spaces; tab key = inserts spaces
 
 nmap <Leader>ev :tabe $MYVIMRC<cr>                              " Easy edit vimrc
-nmap <Leader>eb :tabe ~/.bash_ext<cr>                           " Easy edit bash profile
+nmap <Leader>eb :tabe ~/.bashrc<cr>                           " Easy edit bash profile
 
 set hlsearch
 set incsearch
