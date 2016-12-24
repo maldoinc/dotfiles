@@ -8,6 +8,11 @@ alias e.='nautilus . &> /dev/null &'
 export PS1="[\u@\h \W] "
 
 
+if [ -f ~/init.sh ]; then
+    . ~/init.sh;
+fi
+
+
 # Create and enter a new directory
 function mk() {
     mkdir "$@" && cd "$@"
