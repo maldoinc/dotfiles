@@ -3,7 +3,7 @@ alias sf='php bin/console'
 alias ..='cd ..'
 alias so='. ~/.bashrc'
 alias server='php -S localhost:8080'
-alias e.='nautilus . &> /dev/null &'
+alias e.='nohup dolphin . &> /dev/null &'
 
 export PS1="[\u@\h \W] "
 
