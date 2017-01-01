@@ -1,22 +1,18 @@
 source ~/.vimrc-vundle
 
-
 syntax on                                                       " Enable syntax highlighting
 set number                                                      " Show line numbers
 set cursorline                                                  " Highlight current line
-
-set statusline=%f
 set laststatus=2
-
-
 set backspace=indent,eol,start                                  " Fix backspace behaviour
+let g:jsx_ext_required = 0                                      " Allow JSX in normal JS files
 
 colorscheme Tomorrow-Night
 
 set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab     " Tab character = 4 spaces; tab key = inserts spaces
 
 nmap <Leader>ev :tabe $MYVIMRC<cr>                              " Easy edit vimrc
-nmap <Leader>eb :tabe ~/.bashrc<cr>                           " Easy edit bash profile
+nmap <Leader>eb :tabe ~/.bashrc<cr>                             " Easy edit bash profile
 
 set hlsearch
 set incsearch
@@ -38,4 +34,3 @@ if &term =~ '256color'
 endif
 
 
-let g:jsx_ext_required = 0 " Allow JSX in normal JS files
