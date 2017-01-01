@@ -31,3 +31,6 @@ if &term =~ '256color'
     " work properly when Vim is used inside tmux and GNU screen.
     set t_ut=
 endif
+
+
+let g:jsx_ext_required = 0 " Allow JSX in normal JS files
