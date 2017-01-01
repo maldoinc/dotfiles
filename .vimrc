@@ -3,6 +3,11 @@ source ~/.vimrc-vundle
 
 syntax on                                                       " Enable syntax highlighting
 set number                                                      " Show line numbers
+set cursorline                                                  " Highlight current line
+
+set statusline=%f
+set laststatus=2
+
 
 set backspace=indent,eol,start                                  " Fix backspace behaviour
 
