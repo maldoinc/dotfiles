@@ -5,10 +5,11 @@ set number                                                      " Show line numb
 set cursorline                                                  " Highlight current line
 set laststatus=2
 set backspace=indent,eol,start                                  " Fix backspace behaviour
+set nobackup                                                    " Disable backup
+set noswapfile                                                  " Disable swap file
 let g:jsx_ext_required = 0                                      " Allow JSX in normal JS files
 
-colorscheme Tomorrow-Night
-
+colorscheme xoria256 
 set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab     " Tab character = 4 spaces; tab key = inserts spaces
 
 nmap <Leader>ev :tabe $MYVIMRC<cr>                              " Easy edit vimrc
