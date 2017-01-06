@@ -4,7 +4,7 @@ alias ..='cd ..'
 alias so='. ~/.bashrc'
 alias server='php -S localhost:8080'
 alias e.='nohup dolphin . &> /dev/null &'
-
+alias ls='ls -A --color=auto'
 
 export PS1="\e[0;36m\u@\h\e[m \e[0;33m\W\e[m >> "
 
@@ -15,12 +15,12 @@ fi
 
 
 # Create and enter a new directory
-function mk() {
-    mkdir "$@" && cd "$@"
+mk() {
+    mkdir -pv "$@" && cd "$@"
 }
 
 # Open vim
-function v() {
+v() {
     if [ $# -eq 0 ]; then 
         vim .;
     else 

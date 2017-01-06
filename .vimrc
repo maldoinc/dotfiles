@@ -2,6 +2,8 @@ source ~/.vimrc-vundle
 
 syntax on                                                       " Enable syntax highlighting
 set number                                                      " Show line numbers
+set ignorecase                                                  " Case insensitive search
+set showmatch                                                   " Highlight matching parenthesis
 set cursorline                                                  " Highlight current line
 set laststatus=2
 set backspace=indent,eol,start                                  " Fix backspace behaviour
@@ -17,6 +19,7 @@ nmap <Leader>eb :tabe ~/.bashrc<cr>                             " Easy edit bash
 
 set hlsearch
 set incsearch
+set pastetoggle=<F2>                                            " Toggle pasting
 nmap <Leader><space> :nohlsearch<cr>
 
 " ---- Auto commands ----    
@@ -33,5 +36,3 @@ if &term =~ '256color'
     " work properly when Vim is used inside tmux and GNU screen.
     set t_ut=
 endif
-
-
