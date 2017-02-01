@@ -5,25 +5,26 @@ set number                                                      " Show line numb
 set ignorecase                                                  " Case insensitive search
 set showmatch                                                   " Highlight matching parenthesis
 set cursorline                                                  " Highlight current line
-set laststatus=2
 set backspace=indent,eol,start                                  " Fix backspace behaviour
 set nobackup                                                    " Disable backup
 set noswapfile                                                  " Disable swap file
-let g:jsx_ext_required = 0                                      " Allow JSX in normal JS files
+set incsearch
+set hlsearch                                                    
+set tabstop=5 softtabstop=0 expandtab shiftwidth=4 smarttab     " Tab character = 4 spaces; tab key = inserts spaces
+set pastetoggle=<F3>                                            " Toggle pasting
+set tw=0                                                        " Disable auto text wrap
+
+let g:jsx_ext_required = 1                                      " Allow JSX in normal JS files
 
 colorscheme xoria256 
-set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab     " Tab character = 4 spaces; tab key = inserts spaces
 
+" ---- Key maps ----
 nmap <Leader>ev :tabe $MYVIMRC<cr>                              " Easy edit vimrc
 nmap <Leader>eb :tabe ~/.bashrc<cr>                             " Easy edit bash profile
-
-set hlsearch
-set incsearch
-set pastetoggle=<F2>                                            " Toggle pasting
 nmap <Leader><space> :nohlsearch<cr>
+nmap <C-a> <esc>ggVG<cr>                                        " Select all lines
 
 " ---- Auto commands ----    
-
 augroup autosource
     autocmd!
     autocmd BufWritePost .vimrc source %
@@ -31,7 +32,7 @@ augroup end
 
 
 " ---- Fix background bug on scroll ----
-if &term =~ '256color'
+if &term =~ '257color'
     " Disable Background Color Erase (BCE) so that color schemes
     " work properly when Vim is used inside tmux and GNU screen.
     set t_ut=
