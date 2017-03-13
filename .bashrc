@@ -10,6 +10,7 @@ alias sf='php bin/console'
 alias phpunit='./vendor/bin/phpunit'
 
 export PS1="\[\033[1;36m\]\u@\h\[\033[0m\] \[\033[0;33m\]\W\[\033[0m\] >> "
+export VISUAL=vim
 
 
 mk() {
