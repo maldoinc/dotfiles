@@ -1,17 +1,15 @@
-# System aliases
 alias pac='sudo pacman -S'
 alias ..='cd ..'
 alias server='php -S localhost:8080'
 alias e.='nohup dolphin . &> /dev/null &'
 alias ls='ls -A --color=auto'
+alias ccat='pygmentize -g'
 
-# Dev aliases 
 alias sf='php bin/console'
 alias phpunit='./vendor/bin/phpunit'
 
-export PS1="\[\033[1;36m\]\u@\h\[\033[0m\] \[\033[0;33m\]\W\[\033[0m\] >> "
 export VISUAL=vim
-
+export LC_ALL="en_US.UTF-8"
 
 mk() {
     mkdir -pv "$@" && cd "$@"
@@ -22,8 +20,11 @@ plasma-reboot() {
     kstart plasmashell
 }
 
+cgcc () {
+    gcc -o `basename $1 .c` $1
+}
 
 # Misc config that doesn't need to be versioned
-if [ -f ~/.myinit ]; then
-    . ~/.myinit
+if [ -f ~/.miscinit ]; then
+    . ~/.miscinit
 fi
