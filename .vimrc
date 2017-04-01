@@ -20,7 +20,7 @@ colorscheme xoria256
 
 " ---- Key maps ----
 nmap <Leader>ev :tabe $MYVIMRC<cr>                              " Easy edit vimrc
-nmap <Leader>eb :tabe ~/.bashrc<cr>                             " Easy edit bash profile
+nmap <Leader>eb :tabe ~/.zshrc<cr>                              " Easy edit zsh profile
 nmap <Leader><space> :nohlsearch<cr>
 nmap <C-a> <esc>ggVG<cr>                                        " Select all lines
 

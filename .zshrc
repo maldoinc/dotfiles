@@ -4,6 +4,7 @@ alias server='php -S localhost:8080'
 alias e.='nohup dolphin . &> /dev/null &'
 alias ls='ls -A --color=auto'
 alias ccat='pygmentize -g'
+alias svim='sudo -E vim'
 
 alias sf='php bin/console'
 alias phpunit='./vendor/bin/phpunit'
@@ -22,6 +23,11 @@ plasma-reboot() {
 
 cgcc () {
     gcc -o `basename $1 .c` $1
+}
+
+dl () {
+    cd ~/Downloads
+    wget $@
 }
 
 # Misc config that doesn't need to be versioned
