@@ -5,6 +5,7 @@ alias e.='nohup dolphin . &> /dev/null &'
 alias ls='ls -A --color=auto'
 alias ccat='pygmentize -g'
 alias svim='sudo -E vim'
+alias dj='python manage.py'
 
 alias sf='php bin/console'
 alias phpunit='./vendor/bin/phpunit'
