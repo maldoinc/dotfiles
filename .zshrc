@@ -1,4 +1,6 @@
+#test
 alias pac='sudo pacman -S'
+alias yaourt='yaourt --noconfirm'
 alias ..='cd ..'
 alias server='php -S localhost:8080'
 alias e.='nohup dolphin . &> /dev/null &'
