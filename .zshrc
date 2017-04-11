@@ -1,4 +1,3 @@
-#test
 alias pac='sudo pacman -S'
 alias yaourt='yaourt --noconfirm'
 alias ..='cd ..'
