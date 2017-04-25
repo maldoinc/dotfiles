@@ -1,4 +1,5 @@
 alias pac='sudo pacman -S'
+alias spac='sudo pacman'
 alias yaourt='yaourt --noconfirm'
 alias ..='cd ..'
 alias server='php -S localhost:8080'
