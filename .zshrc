@@ -6,7 +6,7 @@ alias server='php -S localhost:8080'
 alias e.='nohup dolphin . &> /dev/null &'
 alias ls='ls -A --color=auto'
 alias grep='grep --color=auto'
-alias ccat='pygmentize -g'
+alias ccat='pygmentize -g -O style=colorful,linenos=1'
 alias svim='sudo -E vim'
 alias dj='python manage.py'
 

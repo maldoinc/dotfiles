@@ -13,10 +13,11 @@ set hlsearch
 set tabstop=5 softtabstop=0 expandtab shiftwidth=4 smarttab     " Tab character = 4 spaces; tab key = inserts spaces
 set pastetoggle=<F3>                                            " Toggle pasting
 set tw=0                                                        " Disable auto text wrap
+set laststatus=2                                                " Required for vim-airline
 
 let g:jsx_ext_required = 1                                      " Allow JSX in normal JS files
 
-colorscheme xoria256 
+colorscheme grb256
 
 " ---- Key maps ----
 nmap <Leader>ev :tabe $MYVIMRC<cr>                              " Easy edit vimrc
