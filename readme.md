@@ -1,3 +1,3 @@
 ## My dotfiles
 
-Includes my bash and vim configurations
+Includes my zsh and vim configurations

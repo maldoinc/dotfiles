@@ -1,4 +1,7 @@
-alias pac='sudo pacman -S'
+export EDITOR=vim
+export VISUAL=vim
+export LC_ALL="en_US.UTF-8"
+
 alias spac='sudo pacman'
 alias yaourt='yaourt --noconfirm'
 alias ..='cd ..'
@@ -13,10 +16,6 @@ alias dj='python manage.py'
 alias sf='php bin/console'
 alias phpunit='./vendor/bin/phpunit'
 
-export EDITOR=vim
-export VISUAL=vim
-export LC_ALL="en_US.UTF-8"
-
 mk() {
     mkdir -pv "$@" && cd "$@"
 }
@@ -28,11 +27,6 @@ plasma-reboot() {
 
 cgcc () {
     gcc -o `basename $1 .c` $1
-}
-
-dl () {
-    cd ~/Downloads
-    wget $@
 }
 
 # Misc config that doesn't need to be versioned
