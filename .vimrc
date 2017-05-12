@@ -24,6 +24,7 @@ nmap <Leader>ev :tabe $MYVIMRC<cr>                              " Easy edit vimr
 nmap <Leader>eb :tabe ~/.zshrc<cr>                              " Easy edit zsh profile
 nmap <Leader><space> :nohlsearch<cr>
 nmap <C-a> <esc>ggVG<cr>                                        " Select all lines
+nmap <Leader>+ :vertical resize +10<cr>                         " Expand the current split
 
 " ---- Auto commands ----    
 augroup autosource
