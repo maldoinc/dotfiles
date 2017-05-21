@@ -3,7 +3,6 @@ export VISUAL=vim
 export LC_ALL="en_US.UTF-8"
 
 alias spac='sudo pacman'
-alias yaourt='yaourt --noconfirm'
 alias ..='cd ..'
 alias server='php -S localhost:8080'
 alias e.='nohup dolphin . &> /dev/null &'

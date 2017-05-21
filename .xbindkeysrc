@@ -1,0 +1,7 @@
+# simulate alt+left/right (history back/fwd) keystrokes by pressing
+# the corresponding mouse buttons
+"xdotool key alt+Left"
+  b:0xA
+
+"xdotool key alt+Right"
+  b:0xB
