@@ -18,7 +18,7 @@ let g:jsx_ext_required = 1                                                 " All
 let g:vim_markdown_folding_disabled = 1
 let g:vim_markdown_toc_autofit = 1
 
-colorscheme grb256
+colorscheme PaperColor
 
 " ---- Key maps ----
 nmap <Leader>ev :tabe $MYVIMRC<cr>                                         " Easy edit vimrc
@@ -30,7 +30,7 @@ nmap <Leader>n <plug>NERDTreeTabsToggle<CR><Leader>+<cr>                   " Sho
 nmap <Leader>- :vertical resize -5<cr>                                     " Shrink the current split
 
 map <Leader>light :colors hybrid-light<cr>
-map <Leader>dark  :colors grb256<cr>
+map <Leader>dark  :colors PaperColor<cr>
 
 " ---- Auto commands ----    
 augroup autosource
