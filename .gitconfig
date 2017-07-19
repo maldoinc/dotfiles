@@ -1,0 +1,4 @@
+[alias]
+    lg = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+    s = status -sb
+    amend = commit -a --amend --no-edit
