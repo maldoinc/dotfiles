@@ -26,7 +26,7 @@ plasma-reboot() {
 }
 
 ws() {
-    php -S localhost:${1:-8080}
+    python -m http.server ${1:-8080} -b 127.0.0.1
 }
 
 cgcc () {
