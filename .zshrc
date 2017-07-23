@@ -42,7 +42,7 @@ clipfile() {
     if echo $contents > $1; then
         echo "$contents\n\n${#contents}b written to: \033[0;36m$1\033[0m"
     else
-        echo "Cannot write to file: $1"
+        echo "ERR: Cannot write to '$1'"
     fi
 }
 
