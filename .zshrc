@@ -1,9 +1,12 @@
+export ZSH=$HOME/.oh-my-zsh
 export EDITOR=vim
 export VISUAL=vim
-export LC_ALL="en_US.UTF-8"
+export LC_ALL=en_US.UTF-8
+export WINEARCH=win32
 
 alias ..='cd ..'
 alias ...='cd ../..'
+alias NULL='> /dev/null 2>&1'
 alias spac='sudo pacman'
 alias ls='ls -A --color=auto'
 alias grep='grep --color=auto'
@@ -11,8 +14,9 @@ alias ccat='pygmentize -g -O style=colorful,linenos=1'
 alias svim='sudo -e'
 alias dd='dd status=progress'
 alias e.='nohup dolphin . &> /dev/null &'
+alias zshrc="$EDITOR $HOME/.zshrc"
 
-alias gs='git status'
+alias gs='git s'
 
 alias sf='php bin/console'
 alias phpunit='./vendor/bin/phpunit'
@@ -63,3 +67,7 @@ cgcc () {
 if [ -f ~/.miscinit ]; then
     . ~/.miscinit
 fi
+
+ZSH_THEME="terminalparty"
+plugins=(git)
+source $ZSH/oh-my-zsh.sh
