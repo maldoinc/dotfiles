@@ -13,10 +13,15 @@ set tabstop=5 softtabstop=0 expandtab shiftwidth=4 smarttab                " Tab
 set pastetoggle=<F3>                                                       " Toggle pasting
 set tw=0                                                                   " Disable auto text wrap
 set laststatus=2                                                           " Required for vim-airline
+set wildmenu                                                               " Visual filename completion
 
 let g:jsx_ext_required = 1                                                 " Allow JSX in normal JS files
 let g:vim_markdown_folding_disabled = 1
 let g:vim_markdown_toc_autofit = 1
+let NERDTreeShowHidden=1                                                   " Show hidden files by default
+let NERDTreeMinimalUI=1                                                    " Hide press for help
+let NERDTreeIgnore=['\.git$']                                              " Hide .git directory
+
 
 colorscheme PaperColor
 
@@ -31,6 +36,8 @@ nmap <Leader>- :vertical resize -5<cr>                                     " Shr
 
 map <Leader>light :colors hybrid-light<cr>
 map <Leader>dark  :colors PaperColor<cr>
+
+inoremap jk <esc>
 
 " ---- Auto commands ----    
 augroup autosource
