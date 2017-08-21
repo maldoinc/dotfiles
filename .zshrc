@@ -18,7 +18,6 @@ alias zshrc="$EDITOR $HOME/.zshrc"
 
 alias gs='git s'
 
-alias sf='php bin/console'
 alias phpunit='./vendor/bin/phpunit'
 
 alias dj='python manage.py'
@@ -49,6 +48,15 @@ clipfile() {
         echo "ERR: Cannot write to '$1'"
     fi
 }
+
+sf() {
+    if [ -f ./app/console ]; then
+        php app/console $*
+    else
+        php bin/console $*
+    fi
+}
+
 
 plasma-reboot() {
     kquitapp5 plasmashell
