@@ -58,7 +58,7 @@ sf() {
 
 plasma-reboot() {
     kquitapp5 plasmashell
-    kstart plasmashell
+    kstart5 plasmashell
 }
 
 ws() {
