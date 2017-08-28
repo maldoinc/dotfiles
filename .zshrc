@@ -6,8 +6,6 @@ export WINEARCH=win32
 
 alias ..='cd ..'
 alias ...='cd ../..'
-alias NULL='> /dev/null 2>&1'
-alias spac='sudo pacman'
 alias ls='ls -A --color=auto'
 alias grep='grep --color=auto'
 alias ccat='pygmentize -g -O style=colorful,linenos=1'
@@ -87,6 +85,3 @@ fi
 ZSH_THEME="terminalparty"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
-
-
-
