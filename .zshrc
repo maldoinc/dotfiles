@@ -15,12 +15,16 @@ alias e.='nohup dolphin . &> /dev/null &'
 alias zshrc="$EDITOR $HOME/.zshrc"
 
 alias gs='git s'
+alias dc='docker-compose'
 
 alias phpunit='./vendor/bin/phpunit'
 
 alias dj='python manage.py'
 alias venv='python3 -m venv'
 
+dsh() {
+    docker exec -it $1 bash
+}
 
 mk() {
     mkdir -pv "$@" && cd "$@"
