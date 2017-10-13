@@ -79,6 +79,7 @@ if ! pgrep -u "$USER" ssh-agent > /dev/null; then
 fi
 if [[ "$SSH_AGENT_PID" == "" ]]; then
     eval "$(<~/.ssh/.agent)" > /dev/null
+    ssh-add 2> /dev/null
 fi
 
 # Misc config that doesn't need to be versioned
@@ -86,6 +87,6 @@ if [ -f ~/.miscinit ]; then
     . ~/.miscinit
 fi
 
-ZSH_THEME="terminalparty"
+ZSH_THEME="pmcgee"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh

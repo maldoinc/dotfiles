@@ -6,7 +6,7 @@ do
 
     if [ "${#panels[@]}" -gt 0 ]; then
         for WID in "${panels[@]}"; do
-            xprop -id $WID -remove _KDE_NET_WM_SHADOW
+            xprop -id $WID -remove _KDE_NET_WM_SHADOW > /dev/null 2>&1
         done
 
         exit 0
