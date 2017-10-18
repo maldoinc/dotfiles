@@ -11,6 +11,7 @@ alias svim='sudo -e'
 alias dd='dd status=progress'
 alias e.='nohup dolphin . &> /dev/null &'
 alias zshrc="$EDITOR $HOME/.zshrc"
+alias sctl='systemctl'
 
 alias gs='git s'
 alias dc='docker-compose'
