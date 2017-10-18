@@ -4,8 +4,6 @@ export VISUAL=vim
 export LC_ALL=en_US.UTF-8
 export WINEARCH=win32
 
-alias ..='cd ..'
-alias ...='cd ../..'
 alias ls='ls -A --color=auto'
 alias grep='grep --color=auto'
 alias ccat='pygmentize -g -O style=colorful,linenos=1'
