@@ -4,6 +4,7 @@ export VISUAL=vim
 export LC_ALL=en_US.UTF-8
 export WINEARCH=win32
 
+alias sudo='sudo '
 alias ls='ls -A --color=auto'
 alias grep='grep --color=auto'
 alias ccat='pygmentize -g -O style=colorful,linenos=1'
@@ -12,6 +13,7 @@ alias dd='dd status=progress'
 alias e.='nohup dolphin . &> /dev/null &'
 alias zshrc="$EDITOR $HOME/.zshrc"
 alias sctl='systemctl'
+alias histgrep='cat ~/.zsh_history | grep'
 
 alias gs='git s'
 alias dc='docker-compose'
