@@ -1,0 +1,46 @@
+dsh() {
+    docker exec -it $1 bash
+}
+
+mk() {
+    mkdir -pv "$@" && cd "$@"
+}
+
+clipfile() {
+    contents=$(xclip -o)
+
+    if [ -z $1 ]; then
+        echo "ERR: No filename supplied"
+        return
+    fi
+
+    if [ -z $contents ]; then
+        echo "ERR: Clipboard is empty"
+        return
+    fi
+
+
+    if echo $contents > $1; then
+        echo "$contents\n\n${#contents}b written to: \033[0;36m$1\033[0m"
+    else
+        echo "ERR: Cannot write to '$1'"
+    fi
+}
+
+sf() {
+    if [ -f ./app/console ]; then
+        php app/console $*
+    else
+        php bin/console $*
+    fi
+}
+
+
+plasma-reboot() {
+    kquitapp5 plasmashell
+    kstart5 plasmashell
+}
+
+ws() {
+    python -m http.server ${1:-8080} -b 127.0.0.1
+}
