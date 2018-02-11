@@ -4,6 +4,7 @@ export EDITOR=vim
 export VISUAL=vim
 export LC_ALL=en_US.UTF-8
 export WINEARCH=win32
+export TERMINAL=konsole
 
 # start ssh agent
 if ! pgrep -u "$USER" ssh-agent > /dev/null; then
