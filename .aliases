@@ -9,6 +9,7 @@ alias zshrc="$EDITOR $HOME/.zshrc"
 alias sctl='systemctl'
 alias histgrep='cat ~/.zsh_history | grep'
 alias tz='trizen'
+alias vim='nvim'
 
 alias gs='git s'
 alias dc='docker-compose'

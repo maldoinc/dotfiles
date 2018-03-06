@@ -56,7 +56,7 @@ ${font Zekton:Bold:size=12}${alignc 0}${execi 999999 cut -d '\' -f 1 /etc/issue}
 ${font Zekton:Bold:size=11}SYSTEM ${voffset -2}${hr 2}
 
 ${font StyleBats:size=16}4${font}${voffset -3} Kernel: ${alignr}${kernel}
-${font StyleBats:size=16}k${font}${voffset -3} Updates available: ${alignr}${execi 3600 pacaur -Qu | grep -v "\[ ignored \]" | wc -l} 
+${font StyleBats:size=16}k${font}${voffset -3} Updates available: ${alignr}${execi 3600 trizen -Qu | grep -v "\[ ignored \]" | wc -l} 
 
 
 ${font StyleBats:size=16}A${font}${voffset -3} CPU 1: ${cpu cpu1}% ${alignr}${cpubar cpu1 8,60}

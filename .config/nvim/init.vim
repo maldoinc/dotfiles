@@ -1,4 +1,4 @@
-source ~/.vimrc-vundle
+source ~/.config/nvim/vundle.vim
 
 syntax on                                                                  " Enable syntax highlighting
 set number                                                                 " Show line numbers
@@ -23,7 +23,7 @@ let NERDTreeMinimalUI=1                                                    " Hid
 let NERDTreeIgnore=['\.git$']                                              " Hide .git directory
 
 
-colorscheme PaperColor
+colorscheme Benokai
 
 " ---- Key maps ----
 nmap <Leader>ev :tabe $MYVIMRC<cr>                                         " Easy edit vimrc

@@ -1,7 +1,8 @@
-PATH=$PATH:~/.local/bin
+PATH=$PATH:$HOME/.local/bin
+
 export ZSH=$HOME/.oh-my-zsh
-export EDITOR=vim
-export VISUAL=vim
+export EDITOR=nvim
+export VISUAL=nvim
 export LC_ALL=en_US.UTF-8
 export WINEARCH=win32
 export TERMINAL=konsole

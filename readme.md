@@ -1,3 +1,3 @@
-## My dotfiles
+## dotfiles
 
-Includes my zsh and vim configurations
+Includes my zsh, vim conky and plasma configurations
