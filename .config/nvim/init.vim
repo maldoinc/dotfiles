@@ -45,6 +45,9 @@ augroup autosource
     autocmd BufWritePost .vimrc source %
 augroup end
 
+au BufReadPost *.html.twig set syntax=html
+au BufReadPost *.qml set syntax=javascript
+
 
 " ---- Fix background bug on scroll ----
 if &term =~ '256color'
