@@ -1,0 +1,75 @@
+/* hide tabs */
+
+#TabsToolbar { 
+    visibility: collapse !important; 
+}
+
+/* hide sidebar header */
+#sidebar-box #sidebar-header {
+  visibility: collapse;
+}
+
+
+#urlbar {
+    text-align: center;
+}
+
+/* add some padding to toolbar items */
+#PlacesToolbar { 
+  padding: 3px 5px; 
+}
+
+/* make hover blue instead of gray on toolbar items */
+#PersonalToolbar .toolbarbutton-1:hover:not([disabled="true"]):not([checked]):not([open]):not(:active), .tabbrowser-arrowscrollbox > .scrollbutton-up:hover:not([disabled="true"]), .tabbrowser-arrowscrollbox > .scrollbutton-down:hover:not([disabled="true"]), .findbar-button:hover:not(:-moz-any([checked="true"], [disabled="true"])) > .toolbarbutton-text, toolbarbutton.bookmark-item:hover:not(.subviewbutton):not([disabled="true"]):not([open]), toolbar .toolbarbutton-1:hover:not([disabled="true"]):not([checked]):not([open]):not(:active) > .toolbarbutton-icon, toolbar .toolbarbutton-1:hover:not([disabled="true"]):not([checked]):not([open]):not(:active) > .toolbarbutton-text, toolbar .toolbarbutton-1:hover:not([disabled="true"]):not([checked]):not([open]):not(:active) > .toolbarbutton-badge-stack{
+    background-color: #0074D9 !important;
+    color: #fff !important;
+}
+
+/* invert black icon colors when using a dark theme */
+window[lwthemetextcolor="bright"] .toolbarbutton-icon[src="page-icon:https://github.com/"],
+window[lwthemetextcolor="bright"] .toolbarbutton-icon[src="page-icon:https://open.spotify.com/browse/featured"],
+window[lwthemetextcolor="bright"] .toolbarbutton-icon[src="page-icon:http://www.androidpolice.com/"] {
+    filter: invert(100%);
+}
+
+/* sidebar: Tab Center Redux */
+#tabbrowser-tabs {
+  visibility: collapse !important;
+}
+
+#sidebar-box {
+  overflow: hidden;
+  width: 32px;
+  position: fixed;
+  border-right: 1px solid #000;
+  background: orange;
+}
+
+#sidebar-box:hover,
+#sidebar-header,
+#sidebar {
+  min-width: 32px;
+}
+
+#sidebar-header,
+#sidebar-splitter {
+  display: none;
+}
+
+
+#sidebar {
+  height: calc(100vh - 32px); 
+}
+
+#appcontent {
+  margin-left: 32px;
+}
+
+#main-window[inFullscreen][inDOMFullscreen] #appcontent {
+  margin-left: 0;
+}
+
+#main-window[inFullscreen] #sidebar {
+  height: 100vh;
+}
+
