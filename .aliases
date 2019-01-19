@@ -13,6 +13,7 @@ alias vim='nvim'
 
 alias gs='git s'
 alias dc='docker-compose'
+alias dockerclean='sudo docker rm -f $(docker ps -a -q) && sudo docker rmi -f $(docker images -q)'
 
 alias phpunit='./vendor/bin/phpunit'
 
