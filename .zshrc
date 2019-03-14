@@ -23,7 +23,7 @@ if [ -f ~/.miscinit ]; then
     . ~/.miscinit
 fi
 
-ZSH_THEME="jtriley"
+ZSH_THEME="awesomepanda"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 source ~/.functions
