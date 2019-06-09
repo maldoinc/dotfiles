@@ -6,7 +6,7 @@ export VISUAL=nvim
 export LC_ALL=en_US.UTF-8
 export LC_TIME=en_GB.UTF-8
 export WINEARCH=win32
-export TERMINAL=lxterminal
+export TERMINAL=tilix
 
 # start ssh agent
 if ! pgrep -u "$USER" ssh-agent > /dev/null; then
