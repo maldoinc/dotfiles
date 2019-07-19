@@ -10,7 +10,7 @@ alias sctl='systemctl'
 alias histgrep='cat ~/.zsh_history | grep'
 alias tz='trizen'
 alias vim='nvim'
-alias calc='python -i -q -c "from math import *"'
+alias calc='ipython -i -q -c "from math import *"'
 
 alias gs='git s'
 alias dc='docker-compose'
