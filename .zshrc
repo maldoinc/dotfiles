@@ -18,13 +18,14 @@ if [[ "$SSH_AGENT_PID" == "" ]]; then
     ssh-add 2> /dev/null
 fi
 
+ZSH_THEME="awesomepanda"
+plugins=(git)
+
 # Misc config that doesn't need to be versioned
 if [ -f ~/.miscinit ]; then
     . ~/.miscinit
 fi
 
-ZSH_THEME="awesomepanda"
-plugins=(git)
 source $ZSH/oh-my-zsh.sh
 source ~/.functions
 source ~/.aliases
