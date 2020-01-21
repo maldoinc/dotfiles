@@ -1,4 +1,4 @@
-#urlbar {
+#urlbar-input {
     text-align: center;
 }
 
@@ -13,9 +13,20 @@
     color: #fff !important;
 }
 
+/* Toolbar separators are white for some reason even in dark themes */
+toolbarseparator::before {
+  content: '|';
+  background: #323234;
+  padding-top: 5px;
+  font-size: 16px;
+  display: inline-block;
+  color:#555;
+  padding-left: -4px;
+}
+
+
 /* invert black icon colors when using a dark theme */
-window[lwthemetextcolor="bright"] .toolbarbutton-icon[src="page-icon:https://github.com/"],
-window[lwthemetextcolor="bright"] .toolbarbutton-icon[src="page-icon:http://www.androidpolice.com/"] {
+html[lwthemetextcolor="bright"] .toolbarbutton-icon[src*="github.com"] {
     filter: invert(100%);
 }
 
@@ -23,8 +34,41 @@ window[lwthemetextcolor="bright"] .toolbarbutton-icon[src="page-icon:http://www.
     background: #323234;
 }
 
+#PanelUI-button {
+  border: 0 !important;
+}
+
 .private-browsing-indicator {
     position: absolute !important;
-    right: 100px;
+    display: inline;
+    right: 95px;
     top: 4px;
+}
+
+/* Replace favicon on tabs with close button on hover */
+ 
+.tabbrowser-tab:not(:hover) .tab-close-button{ display:none; }
+.tabbrowser-tab:not([pinned]):hover .tab-close-button{ display:block !important; }
+ 
+ 
+.tabbrowser-tab:not([pinned]):hover  .tab-icon-image {
+  display: none !important;
+}
+ 
+.tabbrowser-tab:hover  .tab-throbber,
+.tabbrowser-tab:hover  .tab-icon-image,
+.tabbrowser-tab:hover .tab-sharing-icon-overlay,
+.tabbrowser-tab:hover  .tab-icon-overlay,
+.tabbrowser-tab:hover  .tab-label-container,
+.tabbrowser-tab:hover  .tab-icon-sound {
+  -moz-box-ordinal-group: 2 !important;
+}
+ 
+.tabbrowser-tab .tab-close-button {
+  margin-left: -2px !important;
+  margin-right: 4px !important;
+}
+
+.browserContainer {
+    background-color: #3d3d3d !important;
 }
