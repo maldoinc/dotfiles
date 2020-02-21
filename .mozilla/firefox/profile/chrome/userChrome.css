@@ -13,17 +13,6 @@
     color: #fff !important;
 }
 
-/* Toolbar separators are white for some reason even in dark themes */
-toolbarseparator::before {
-  content: '|';
-  background: #323234;
-  padding-top: 5px;
-  font-size: 16px;
-  display: inline-block;
-  color:#555;
-  padding-left: -4px;
-}
-
 
 /* invert black icon colors when using a dark theme */
 html[lwthemetextcolor="bright"] .toolbarbutton-icon[src*="github.com"] {
