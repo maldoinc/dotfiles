@@ -1,0 +1,20 @@
+#! /usr/bin/env bash
+
+if pgrep -x "alacritty" > /dev/null
+then
+    WID=$(xdotool search --class "Alacritty" | head -1)
+
+    if [[ -n "$WID" ]]
+    then
+        FOCUS_WID=$(xdotool getactivewindow)
+
+        if [[ "$FOCUS_WID" == "$WID" ]]
+        then
+            xdotool windowminimize "$WID"
+        else
+            xdotool windowactivate "$WID"
+        fi
+    fi
+else
+    alacritty &
+fi
