@@ -1,10 +1,6 @@
-#urlbar-input {
-    text-align: center;
-}
-
 /* add some padding to toolbar items */
 #PlacesToolbar { 
-  padding: 3px 5px; 
+  padding: 3px 5px;
 }
 
 /* make hover blue instead of gray on toolbar items */
@@ -15,12 +11,12 @@
 
 
 /* invert black icon colors when using a dark theme */
-html[lwthemetextcolor="bright"] .toolbarbutton-icon[src*="github.com"] {
+html[lwthemetextcolor="dark"] .toolbarbutton-icon[src*="github.com"] {
     filter: invert(100%);
 }
 
 #TabsToolbar {
-    background: #323234;
+    background: #2b2a33;
 }
 
 #PanelUI-button {

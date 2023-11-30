@@ -23,6 +23,8 @@ Plugin 'dracula/vim'
 Plugin 'wesQ3/vim-windowswap'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'digitaltoad/vim-pug'
+Bundle 'gmarik/vundle'
+Bundle 'dag/vim-fish'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

@@ -19,7 +19,7 @@ if [[ "$SSH_AGENT_PID" == "" ]]; then
 fi
 
 ZSH_THEME="awesomepanda"
-plugins=(git)
+plugins=(git zsh-autosuggestions zsh-vi-mode)
 
 # Misc config that doesn't need to be versioned
 if [ -f ~/.miscinit ]; then

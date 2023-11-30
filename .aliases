@@ -20,3 +20,5 @@ alias phpunit='./vendor/bin/phpunit'
 
 alias dj='python manage.py'
 alias venv='python3 -m venv'
+
+alias agt='ag -Q'
