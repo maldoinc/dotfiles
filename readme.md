@@ -1,3 +1,3 @@
 ## dotfiles
 
-Includes my zsh, nvim, conky and plasma configurations
+Includes my zsh, nvim and plasma configurations
